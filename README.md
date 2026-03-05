@@ -1,39 +1,190 @@
-# customer-churn-prediction
-Customer Churn Prediction Using Machine Learning
-📌 Project Overview:
+# 📊 Customer Churn Prediction
 
-This project predicts whether a telecom customer will churn (leave the company) using Logistic Regression. The objective is to help businesses identify high-risk customers and improve retention strategies.
+# 📌 Project Overview
 
-🛠 Technologies Used:
+Customer churn is a major challenge for telecom companies. Losing customers reduces company revenue and increases the cost of acquiring new customers.
 
-Python
+This project analyzes telecom customer data and builds a machine learning model to predict whether a customer will churn or not. The model helps companies identify customers who are likely to leave so they can implement retention strategies.
 
-Pandas
+# 🎯 Project Objectives
 
-Matplotlib
+>Analyze telecom customer data
 
-Scikit-learn
+>Identify factors influencing customer churn
 
-📊 Project Workflow:
+>Build a machine learning model to predict churn
 
-Data Cleaning & Preprocessing
+>Visualize patterns and trends in customer behavior
 
-Feature Encoding
+# 🛠 Tools & Technologies Used
 
-Train-Test Split
+>Python – Programming language used for analysis and modeling
 
-Logistic Regression Model Training
+>Pandas – Data manipulation and analysis
 
-Model Evaluation (Accuracy & Confusion Matrix)
+>Scikit-learn – Machine learning model development
 
-Data Visualization
+>Google Colab – Cloud environment for running Python notebooks
 
-📈 Model Performance:
+>Kaggle – Source of the dataset
 
-Accuracy: ~78%
+# 📚 Libraries Used
 
-Evaluated using Confusion Matrix
+>Pandas
 
-🎯 Business Impact:
+>NumPy
 
-This model helps companies identify customers likely to churn so they can take preventive actions such as offering discounts or personalized retention plans.
+>Scikit-learn
+
+# 📂 Dataset Information
+
+The dataset was obtained from Kaggle and contains telecom customer information such as:
+
+* Customer ID
+
+* Gender
+
+* Senior Citizen
+
+* Tenure
+
+* Internet Service
+
+* Contract Type
+
+* Payment Method
+
+* Monthly Charges
+
+* Total Charges
+
+* Churn Status
+
+Target Variable:
+
+* Churn
+
+Values:
+
+Yes → Customer left the company
+
+No → Customer stayed
+
+# 🔎 Project Workflow
+
+1️⃣ Data Collection
+
+The telecom customer churn dataset was imported and explored to understand its structure and variables.
+
+2️⃣ Data Cleaning
+
+→ Checked for missing values
+
+→ Converted incorrect data types
+
+→ Removed unnecessary records
+
+3️⃣ Exploratory Data Analysis (EDA)
+
+→ Performed data visualization to understand patterns in churn behavior.
+
+→ Key analysis included:
+
+→ Churn distribution
+
+→ Contract type vs churn
+
+→ Monthly charges vs churn
+
+4️⃣ Feature Engineering
+
+Categorical variables were converted into numerical format for machine learning algorithms.
+
+5️⃣ Model Building
+
+A Logistic Regression model was built using Scikit-learn to predict customer churn.
+
+6️⃣ Model Evaluation
+
+→ Model performance was evaluated using:
+
+* Accuracy Score
+
+* Confusion Matrix
+
+# 📊 Model Performance
+
+→ Model Accuracy:
+
+78%
+
+→ Confusion Matrix: 
+
+| Actual / Predicted | No Churn | Churn |
+| ------------------ | -------- | ----- |
+| No Churn           | 915      | 118   |
+| Churn              | 181      | 193   |
+
+# 📈 Data Visualizations
+
+The project includes several visualizations such as:
+
+* Churn distribution chart
+
+* Contract type vs churn
+
+* Monthly charges vs churn
+
+* Confusion matrix visualization
+
+These visualizations help identify important patterns affecting customer churn.
+
+# 🔍 Key Insights
+
+From the analysis, the following insights were identified:
+
+* Customers with month-to-month contracts have the highest churn rate.
+
+* Customers with higher monthly charges are more likely to churn.
+
+* Customers with shorter tenure tend to leave earlier.
+
+* Customers without technical support services churn more frequently.
+
+# 💡 Business Recommendations
+
+Based on the insights obtained:
+
+* Encourage customers to move to long-term contracts.
+
+* Offer loyalty discounts to high-risk customers.
+
+* Improve customer support services.
+
+* Implement customer retention programs.
+
+# 🚀 Future Improvements
+
+The project can be further improved by:
+
+* Testing advanced machine learning models such as Random Forest,Gradient Boosting,XGBoost.
+
+* Performing feature selection.
+
+* Building an interactive dashboard using Power BI or Tableau.
+
+# 👩‍💻 Author
+
+Sai Divitha Prathapani
+
+Aspiring Data Analyst skilled in:
+
+* Data Analysis
+
+* Python
+
+* SQL
+
+* Machine Learning
+
+* Data Visualization
